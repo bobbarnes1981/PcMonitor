@@ -27,31 +27,29 @@ $EndComp
 $Comp
 L Sensor_Temperature:DS18B20 U1
 U 1 1 5F57B029
-P 5750 2350
-F 0 "U1" H 5520 2396 50  0000 R CNN
-F 1 "DS18B20" H 5520 2305 50  0000 R CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4750 2100 50  0001 C CNN
-F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 5600 2600 50  0001 C CNN
-	1    5750 2350
+P 5850 1300
+F 0 "U1" H 5620 1346 50  0000 R CNN
+F 1 "DS18B20" H 5620 1255 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4850 1050 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 5700 1550 50  0001 C CNN
+	1    5850 1300
 	-1   0    0    -1  
 $EndComp
 Text Label 4200 1225 0    50   ~ 0
 +5v(REG)
-Text Label 5750 1875 0    50   ~ 0
+Text Label 5850 825  0    50   ~ 0
 +5v(REG)
-Wire Wire Line
-	5750 2050 5750 1975
 Wire Wire Line
 	4200 1225 4200 1525
 $Comp
 L power:GND #PWR0101
 U 1 1 5F57CAD8
-P 5750 2875
-F 0 "#PWR0101" H 5750 2625 50  0001 C CNN
-F 1 "GND" H 5755 2702 50  0000 C CNN
-F 2 "" H 5750 2875 50  0001 C CNN
-F 3 "" H 5750 2875 50  0001 C CNN
-	1    5750 2875
+P 5850 1825
+F 0 "#PWR0101" H 5850 1575 50  0001 C CNN
+F 1 "GND" H 5855 1652 50  0000 C CNN
+F 2 "" H 5850 1825 50  0001 C CNN
+F 3 "" H 5850 1825 50  0001 C CNN
+	1    5850 1825
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -66,8 +64,6 @@ F 3 "" H 4050 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 2650 5750 2750
-Wire Wire Line
 	4100 3525 4100 3625
 Wire Wire Line
 	4100 3625 4050 3625
@@ -81,92 +77,53 @@ Connection ~ 4050 3625
 $Comp
 L power:GND #PWR0103
 U 1 1 5F57FD3D
-P 2250 3275
-F 0 "#PWR0103" H 2250 3025 50  0001 C CNN
-F 1 "GND" H 2255 3102 50  0000 C CNN
-F 2 "" H 2250 3275 50  0001 C CNN
-F 3 "" H 2250 3275 50  0001 C CNN
-	1    2250 3275
+P 1200 2125
+F 0 "#PWR0103" H 1200 1875 50  0001 C CNN
+F 1 "GND" H 1205 1952 50  0000 C CNN
+F 2 "" H 1200 2125 50  0001 C CNN
+F 3 "" H 1200 2125 50  0001 C CNN
+	1    1200 2125
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 3050 2250 3275
+	1200 1900 1200 2125
 $Comp
 L Connector:DB9_Female_MountingHoles J1
 U 1 1 5F57E806
-P 2250 2450
-F 0 "J1" H 2430 2452 50  0000 L CNN
-F 1 "DB9_Female_MountingHoles" H 2430 2361 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-9_Female_Vertical_P2.77x2.84mm_MountingHoles" H 2250 2450 50  0001 C CNN
-F 3 " ~" H 2250 2450 50  0001 C CNN
-	1    2250 2450
+P 1200 1300
+F 0 "J1" H 1380 1302 50  0000 L CNN
+F 1 "DB9_Female_MountingHoles" H 1380 1211 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-9_Female_Vertical_P2.77x2.84mm_MountingHoles" H 1200 1300 50  0001 C CNN
+F 3 " ~" H 1200 1300 50  0001 C CNN
+	1    1200 1300
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	2550 2250 3225 2250
-Wire Wire Line
-	3225 2250 3225 1925
-Wire Wire Line
-	3225 1925 3500 1925
-Wire Wire Line
-	3500 2025 3325 2025
-Wire Wire Line
-	3325 2025 3325 2450
-Wire Wire Line
-	3325 2450 2550 2450
-Text Label 5150 2350 2    50   ~ 0
+Text Label 5250 1300 2    50   ~ 0
 1_WIRE
-Wire Wire Line
-	5150 2350 5325 2350
-Text Label 3225 2600 2    50   ~ 0
+Text Label 3100 2125 2    50   ~ 0
 1_WIRE
-Wire Wire Line
-	3500 2125 3425 2125
-Wire Wire Line
-	3425 2125 3425 2600
-Wire Wire Line
-	3425 2600 3225 2600
 $Comp
 L Device:R R1
 U 1 1 5F583C5E
-P 5325 2125
-F 0 "R1" H 5395 2171 50  0000 L CNN
-F 1 "4k7" H 5395 2080 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5255 2125 50  0001 C CNN
-F 3 "~" H 5325 2125 50  0001 C CNN
-	1    5325 2125
-	1    0    0    -1  
+P 7275 2125
+F 0 "R1" H 7345 2171 50  0000 L CNN
+F 1 "4k7" H 7345 2080 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7205 2125 50  0001 C CNN
+F 3 "~" H 7275 2125 50  0001 C CNN
+	1    7275 2125
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5325 1975 5750 1975
-Connection ~ 5750 1975
-Wire Wire Line
-	5750 1975 5750 1875
-Wire Wire Line
-	5325 2275 5325 2350
-Connection ~ 5325 2350
-Wire Wire Line
-	5325 2350 5450 2350
 $Comp
 L Device:CP C1
 U 1 1 5F584A00
-P 6175 2125
-F 0 "C1" H 6293 2171 50  0000 L CNN
-F 1 "10uF" H 6293 2080 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 6213 1975 50  0001 C CNN
-F 3 "~" H 6175 2125 50  0001 C CNN
-	1    6175 2125
-	1    0    0    -1  
+P 7275 1775
+F 0 "C1" H 7393 1821 50  0000 L CNN
+F 1 "10uF" H 7393 1730 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 7313 1625 50  0001 C CNN
+F 3 "~" H 7275 1775 50  0001 C CNN
+	1    7275 1775
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5750 1975 6175 1975
-Wire Wire Line
-	6175 2275 6175 2750
-Wire Wire Line
-	6175 2750 5750 2750
-Connection ~ 5750 2750
-Wire Wire Line
-	5750 2750 5750 2875
 Text Label 7050 925  2    50   ~ 0
 +12v(IN)
 Text Label 7050 1225 2    50   ~ 0
@@ -212,4 +169,117 @@ Text Label 3900 1225 2    50   ~ 0
 +12v(IN)
 Wire Wire Line
 	3900 1525 3900 1225
+Text Label 7050 1775 2    50   ~ 0
++5v(REG)
+$Comp
+L power:GND #PWR0105
+U 1 1 5F5883E6
+P 7525 1775
+F 0 "#PWR0105" H 7525 1525 50  0001 C CNN
+F 1 "GND" V 7530 1647 50  0000 R CNN
+F 2 "" H 7525 1775 50  0001 C CNN
+F 3 "" H 7525 1775 50  0001 C CNN
+	1    7525 1775
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7425 1775 7525 1775
+Wire Wire Line
+	7050 1775 7125 1775
+Wire Wire Line
+	5850 1600 5850 1825
+Text Label 7525 2125 0    50   ~ 0
+1_WIRE
+Text Label 7050 2125 2    50   ~ 0
++5v(REG)
+Wire Wire Line
+	5850 825  5850 1000
+Wire Wire Line
+	5250 1300 5550 1300
+Wire Wire Line
+	7050 2125 7125 2125
+Wire Wire Line
+	7425 2125 7525 2125
+Text Label 2350 1100 0    50   ~ 0
+RX
+Text Label 2350 1300 0    50   ~ 0
+TX
+Text Label 3100 1925 2    50   ~ 0
+RX
+Text Label 3100 2025 2    50   ~ 0
+TX
+Wire Wire Line
+	1500 1100 2350 1100
+Wire Wire Line
+	1500 1300 2350 1300
+Wire Wire Line
+	3100 1925 3500 1925
+Wire Wire Line
+	3100 2025 3500 2025
+Wire Wire Line
+	3100 2125 3500 2125
+$Comp
+L Sensor_Temperature:DS18B20 U2
+U 1 1 5F599217
+P 5850 2700
+F 0 "U2" H 5620 2746 50  0000 R CNN
+F 1 "DS18B20" H 5620 2655 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4850 2450 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 5700 2950 50  0001 C CNN
+	1    5850 2700
+	-1   0    0    -1  
+$EndComp
+Text Label 5850 2225 0    50   ~ 0
++5v(REG)
+$Comp
+L power:GND #PWR0106
+U 1 1 5F59921E
+P 5850 3225
+F 0 "#PWR0106" H 5850 2975 50  0001 C CNN
+F 1 "GND" H 5855 3052 50  0000 C CNN
+F 2 "" H 5850 3225 50  0001 C CNN
+F 3 "" H 5850 3225 50  0001 C CNN
+	1    5850 3225
+	1    0    0    -1  
+$EndComp
+Text Label 5250 2700 2    50   ~ 0
+1_WIRE
+Wire Wire Line
+	5850 3000 5850 3225
+Wire Wire Line
+	5850 2225 5850 2400
+Wire Wire Line
+	5250 2700 5550 2700
+$Comp
+L Sensor_Temperature:DS18B20 U3
+U 1 1 5F59A5FC
+P 5850 4050
+F 0 "U3" H 5620 4096 50  0000 R CNN
+F 1 "DS18B20" H 5620 4005 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4850 3800 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 5700 4300 50  0001 C CNN
+	1    5850 4050
+	-1   0    0    -1  
+$EndComp
+Text Label 5850 3575 0    50   ~ 0
++5v(REG)
+$Comp
+L power:GND #PWR0107
+U 1 1 5F59A603
+P 5850 4575
+F 0 "#PWR0107" H 5850 4325 50  0001 C CNN
+F 1 "GND" H 5855 4402 50  0000 C CNN
+F 2 "" H 5850 4575 50  0001 C CNN
+F 3 "" H 5850 4575 50  0001 C CNN
+	1    5850 4575
+	1    0    0    -1  
+$EndComp
+Text Label 5250 4050 2    50   ~ 0
+1_WIRE
+Wire Wire Line
+	5850 4350 5850 4575
+Wire Wire Line
+	5850 3575 5850 3750
+Wire Wire Line
+	5250 4050 5550 4050
 $EndSCHEMATC
